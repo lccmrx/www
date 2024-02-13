@@ -23,7 +23,7 @@ const Shortcut = ({ text }) => {
     </div>
   ) : (
     <div className="shortcut">
-      <p className="key">command</p>
+      <p className="key">{isMac ? "command" : "ctrl"}</p>
       <p>+</p>
       <p className="key">{isMac ? "return" : "enter"}</p>
       <p>{text}</p>
