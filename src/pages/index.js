@@ -29,15 +29,16 @@ const IndexPage = () => {
         <Header hideShortcut />
         <main>
           <Container>
-            <h1 className="banner-title">cesar oliveira</h1>
+            <h1 className="banner-title">Lucca Marques</h1>
             <h2 className="banner-subtitle">
-              tech lead at{" "}
-              <a target="_blank" href="https://itau.com.br">
-                itaú
+              software engineer @{" "}
+              <a target="_blank" href="https://redventures.com.br">
+                Red Ventures Brazil
               </a>
             </h2>
             <p className="banner-description">
-              and having fun creating cool digital experiences
+              and learning one thing at a time, sharing knowledge, building cool web apps,
+              and gathering a bunchful experiences
             </p>
             <Shortcut text="to find what you are looking for" />
           </Container>
@@ -50,4 +51,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>cesarolvr</title>;
+export const Head = () => <title>lccmrx</title>;

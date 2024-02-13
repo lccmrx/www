@@ -12,11 +12,11 @@ const NotFound = () => {
     <div className="not-found">
       <p>404</p>
       <Loader isOpened={true} linkBack={true} limit={404} />
-      <Link to="/">go back to cesarolvr.com</Link>
+      <Link to="/">go back to lccmrx.dev</Link>
     </div>
   );
 };
 
-export const Head = () => <title>nothing here | cesarolvr</title>;
+export const Head = () => <title>nothing here | lccmrx</title>;
 
 export default NotFound;

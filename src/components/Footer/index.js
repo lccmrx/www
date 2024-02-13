@@ -4,6 +4,9 @@ import * as React from "react";
 // Components
 import Container from "../Container";
 
+// Data
+import { socials } from "../../data";
+
 // Styles
 import "./index.scss";
 
@@ -31,22 +34,32 @@ const Footer = () => {
           </Link>
         </li>
         <li>
-          <a href="mailto:contact@cesarolvr.com">email</a>
+          <Link
+            to={socials.email}
+          >
+            email
+          </Link>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/cesarolvr/" target="_blank">
+          <Link
+            to={socials.linkedin}
+          >
             linkedin
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://github.com/cesarolvr/" target="_blank">
+          <Link
+            to={socials.github}
+          >
             github
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="https://www.instagram.com/cesarolvr/" target="_blank">
+          <Link
+            to={socials.instagram}
+          >
             instagram
-          </a>
+          </Link>
         </li>
       </ul>
     </footer>

@@ -7,8 +7,8 @@ import Note from "../components/Note";
 import Loader from "../components/Loader";
 import Cursor from "../components/Cursor";
 
-// Files
-import cesarolvrCV from "../files/cv-cesarolvr.pdf";
+// Data
+import { CV, socials } from "../data";
 
 // Styles
 import "../styles/global.scss";
@@ -33,13 +33,13 @@ const Actions = () => {
           <Container>
             <ul className="actions-list">
               <li>
-                <a href={cesarolvrCV} download={true} target="_blank">
+                <a href={CV} download={true} target="_blank">
                   download cv
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.linkedin.com/in/cesarolvr/"
+                  href={socials.linkedin}
                   target="_blank"
                 >
                   go to my linkedin
@@ -47,34 +47,29 @@ const Actions = () => {
               </li>
               <li>
                 <a href="https://meet.google.com/" target="_blank">
-                  book a meeting <span>invite to -> contact@cesarolvr.com</span>
+                  book a meeting <span>invite to -> {socials.email.slice(7)}</span>
                 </a>
               </li>
               <li>
-                <a href="https://github.com/cesarolvr/" target="_blank">
+                <a href={socials.github} target="_blank">
                   see my github
                 </a>
               </li>
               <li>
                 {" "}
-                <a href="mailto:contact@cesarolvr.com">send me an email</a>
+                <a href={socials.email}>send me an email</a>
               </li>
               <li>
-                <a href="https://www.instagram.com/cesarolvr/" target="_blank">
-                  follow me on instagram <span>(only friends)</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://goodreads.com/cesarolvr" target="_blank">
-                  my current readings <span>(only curious)</span>
+                <a href={socials.instagram} target="_blank">
+                  follow me on instagram <span>(friends only)</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/cesarolvr/cesarolvr-www"
+                  href={socials.github + "/www"}
                   target="_blank"
                 >
-                  view source code of this website <span>(only devs)</span>
+                  view source code of this website <span>(devs only)</span>
                 </a>
               </li>
             </ul>

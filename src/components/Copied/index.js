@@ -4,7 +4,7 @@ import * as React from "react";
 import "./index.scss";
 
 const Copied = () => {
-  return <div className="copied">copied 👍🏾</div>;
+  return <div className="copied">copied 👍🏻</div>;
 };
 
 export default Copied;

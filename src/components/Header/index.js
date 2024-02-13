@@ -11,7 +11,7 @@ const Header = ({ goBackToHome }) => {
   return (
     <header className="header">
       <div className="header-logo">
-        <Link to="/">cesarolvr.com</Link>
+        <Link to="/">lccmrx.dev</Link>
       </div>
       {goBackToHome && <Link className="goback" to="/">{"<-"} go back to home</Link>}
 

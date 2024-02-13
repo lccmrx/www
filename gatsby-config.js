@@ -3,15 +3,15 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `cesarolvr`,
-    siteUrl: `https://www.cesarolvr.com`,
+    title: `lccmrx`,
+    siteUrl: `https://lccmrx.dev`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-RBL0Y5VB5K",
+          "GTM-NZPPKM5Z",
         ],
         pluginConfig: {
           head: true,
@@ -41,11 +41,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "cesarolvr.com",
-        short_name: "cesarolvr",
+        name: "lccmrx.dev",
+        short_name: "lccmrx",
         start_url: "/",
-        background_color: "#222222",
-        theme_color: "#222222",
+        background_color: "#666666",
+        theme_color: "#0b2f4b",
         display: "standalone",
         icon: "src/images/icon.png",
         crossOrigin: `use-credentials`,

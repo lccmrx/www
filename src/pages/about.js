@@ -9,14 +9,11 @@ import Cursor from "../components/Cursor";
 import { FiCopy } from "@react-icons/all-files/fi/FiCopy";
 import { FiDownload } from "@react-icons/all-files/fi/FiDownload";
 
-// Files
-import cesarolvrCV from "../files/cv-cesarolvr.pdf";
-
 // Context
 import { State } from "../components/Layout";
 
 // Data
-import { bioDescription, careerPath, academyPath } from "../data";
+import { bioDescription, subBioDescription, careerPath, academyPath, CV} from "../data";
 
 // Images
 import headshot from "../images/headshot.jpg";
@@ -72,16 +69,10 @@ const About = () => {
           <div className="bio column">
             <h3 className="about-title">bio</h3>
             <p className="paragraph">
-              8+ years of experience as a Software Engineer, working on
-              large-scale and high-impact projects for digital companies, where
-              I created digital acquisition experiences, dashboards,
-              awwwards-like websites, design systems, mobile apps and email
-              marketing tools.
+              {bioDescription}
             </p>
             <p className="paragraph">
-              I'm really focused about resolve real problems through technology,
-              specifically web development, creative development, and usability
-              engineering.
+              {subBioDescription}
             </p>
             <ul className="control">
               <li>
@@ -91,7 +82,7 @@ const About = () => {
                 </button>
               </li>
               <li>
-                <a className="button -icon" href={cesarolvrCV} download={true}>
+                <a className="button -icon" href={CV} download={true}>
                   <FiDownload />
                   <p>download cv</p>
                 </a>
@@ -112,7 +103,7 @@ const About = () => {
                 })}
                 onClick={() => setActivePanel(2)}
               >
-                academy journey
+                academy path
               </button>
             </div>
             {activePanel === 1 ? (
@@ -151,4 +142,4 @@ const About = () => {
 
 export default About;
 
-export const Head = () => <title>me | cesarolvr</title>;
+export const Head = () => <title>me | lccmrx</title>;

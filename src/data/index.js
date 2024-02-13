@@ -2,73 +2,68 @@ import * as React from "react";
 
 import { FiCopy } from "@react-icons/all-files/fi/FiCopy";
 import { FiDownload } from "@react-icons/all-files/fi/FiDownload";
-import { FiAward } from "@react-icons/all-files/fi/FiAward";
+import { FiLinkedin } from "@react-icons/all-files/fi/FiLinkedin";
 import { FiGithub } from "@react-icons/all-files/fi/FiGithub";
 import { FiCalendar } from "@react-icons/all-files/fi/FiCalendar";
 import { FiInstagram } from "@react-icons/all-files/fi/FiInstagram";
-import { FiBook } from "@react-icons/all-files/fi/FiBook";
 import { FiMail } from "@react-icons/all-files/fi/FiMail";
 import { FiCoffee } from "@react-icons/all-files/fi/FiCoffee";
 
 // Files
-import cesarolvrCV from "../files/cv-cesarolvr.pdf";
+import CV from "../files/cv-cesarolvr.pdf";
 
-const bioDescription = `8+ years of experience as a Software Engineer, working on
+const bioDescription = `6+ years of experience as a Software Engineer, working on
 large-scale and high-impact projects for digital companies, where I
-created digital acquisition experiences, dashboards, awwwards-like
-websites, design systems, mobile apps and email marketing tools.  I'm really focused about resolve real problems through technology,
-specifically web development, creative development, and usability
-engineering.`;
+created digital acquisition experiences, dashboards, designed systems and email marketing tools.`;
+const subBioDescription = `I'm really focused about resolving real problems through technology,
+specifically web development, regarding back-end technologies.
+Web is my passion. Web is my life. I help making the web as it is today.`;
+
+const rootDomain = "https://lccmrx.dev";
+
+const socials = {
+  email: "mailto:contact@lccmrx.dev",
+  discord: "",
+  github: "https://github.com/lccmrx",
+  linkedin: "https://linkedin.com/in/lccmrx",
+  instagram: "https://instagram.com/lccmrx/",
+}
 
 const careerPath = [
   {
-    role: "tech lead",
-    details: `Itaú Unibanco | São Paulo, Brazil | 2023 -> current`,
-    description: `   As a Tech Lead at Itaú, the largest bank in Latin America, I work on developing web applications using JavaScript and various frameworks and technologies, such as React, Node, TypeScript, Cypress, and GatsbyJS. I also lead and manage projects, teams, and processes, ensuring quality, performance, and accessibility standards.`,
+    role: "software engineer",
+    details: `Red Ventures | São Paulo, Brazil | 2022 -> current`,
+    description: `As a Software Engineer @ RV, my core focus is on back-end engineering, complemented by providing assistance to the data teams as required. Our tech stack predominantly features Golang, complemented by a variety of bespoke architectures, including mail gunners, content management systems, and more. We specialize in constructing REST APIs tailored to our clients' specific needs, ranging from serverless to cloud-managed containerized architectures, leveraging technologies such as Kubernetes and AWS ECS. Our primary objective is to craft seamless acquisition pages that prioritize speed and security throughout the process. This commitment ensures we consistently meet high standards of quality, performance, and accessibility.`,
   },
   {
-    role: "senior software engineer",
-    details: `Red Ventures | Charlotte, USA | 2018 -> 2023`,
-    description: `My activities were around creation of digital acquisition experiences for banks, dashboards to internal tools, tools to automate e-mail marketing development and delivering, Design systems to serve components for multiple projects, tools in order to resolve accessibility issues during the automated tests, and sophisticated experiences to keep users engaged with multiple motion/animation libraries.`,
+    role: "software engineer assistant",
+    details: `Red Ventures | São Paulo, Brazil | 2020 -> 2022`,
+    description: `As an Assistant Software Engineer @ RV, my role primarily involved contributing to the development and maintenance of an ongoing project. I played a key part in enhancing various features across the system, ensuring its smooth operation. My contributions extended to the creation and improvement of numerous internal tools. Among these were sophisticated dashboards and comprehensive email marketing tools, which were instrumental in streamlining operations and enhancing our marketing strategies. My efforts in these areas not only supported the project's objectives but also fostered a more efficient and productive workflow within the team.`,
   },
   {
-    role: "community manager",
-    details: `Nerdzão | São Paulo, Brazil | 2017 -> 2018`,
-    description: `Nerdzão is one of the largest technology communities in Brazil. I could contribute to create dozens of these technology events in the town, and it helped me a lot with my career growth (besides it allow me to travel through Brazil).`,
+    role: "back-end developer",
+    details: `ITWV | São Paulo, Brazil | 2019 -> 2020`,
+    description: `Beginning my programming journey as a back-end developer @ ITWV, I embarked on a path that introduced me to Python, my inaugural programming language. My initial project involved creating a REST API for a bespoke Business Intelligence dashboard system. This experience was not limited to REST API development; I also engaged in batch processing tasks that required minimal API interaction. However, it was my first exposure to integrating with clients' APIs that truly broadened my technological horizon and ignited my enduring passion for web development.
+
+    My career at ITWV also afforded me the opportunity to contribute to several notable Machine Learning projects. Among these, a standout project enabled a hospital to swiftly identify cancer in patients using laboratory reports. This, along with my involvement in various data processing and analytics projects, has enriched my professional experience, blending my interest in web technologies.`,
   },
   {
-    role: "front-end engineer",
-    details: `Shawee | São Paulo, Brazil | 2017 -> 2018`,
-    description: `The job at Shawee were around the creation of static web applications and SPAs. Large parts of them I did using React and GraphQL.`,
-  },
-  {
-    role: "front-end engineer",
-    details: `Horizon Four | São Paulo, Brazil | 2017 -> 2018`,
-    description: `At Horizon Four, I created many web apps using React and React Native for mobile apps. From new applications, through maintenance of existing software, to the craftsmanship of internal tools and frameworks. We've already gone through several other tools like AngularJS, Angular 2+ with Typescript, Phonegap, VanillaJS and others.`,
-  },
-  {
-    role: "a ”handyman engineer”",
-    details: `Ag. Empreendora | São Paulo, Brazil | 2016 -> 2017`,
-    description: `A marketing agency composed by 3 guys, so there I had to do everything. From planning sprints, prototyping and to get the hands dirty developing static sites and SPAs with vanilla and AngularJS.`,
+    role: "intern",
+    details: `ITWV | São Paulo, Brazil | 2018 -> 2019`,
+    description: `Starting my tech journey as an intern @ ITWV, I was initially unfamiliar with the intricacies of the field, but soon found myself immersed in the world of SQL and databases. The company, primarily focused on delivering data analytics projects and optimizing ETL processes, occasionally ventured into system development. As an Oracle Partner, ITWV provided me with extensive exposure to Oracle databases and tools, alongside valuable insights into Oracle Cloud. This enriching experience led me to achieve my first Oracle certification as an OCI Architect.
+
+    During my tenure, I contributed to the construction of various dashboards, but the project that resonated with me the most involved leveraging a third-party software named 'Stilingue' for sentiment analysis from social media. Utilizing this data, we developed a dashboard to visually present the findings. This particular project opened doors to exciting opportunities, including traveling to another state to present our results to clients. This journey not only marked the beginning of my career in technology but also shaped my understanding and appreciation for data-driven decision-making and cloud technologies.`,
   },
 ];
 
 const academyPath = [
   {
-    role: "postgraduate diploma (pgdip) of leadership and innovation",
-    details: `getulio vargas foundation (fgv) | são Paulo, brazil | 2023 -> 2024`,
+    role: "postgraduate diploma (pgdip) in golang expert",
+    details: `full cycle | são Paulo, brazil | 2024 -> ongoing`,
   },
   {
-    role: "summer programm on usability engineering",
-    details: `university of são paulo (usp) | são Paulo, brazil | 2017 -> 2018`,
-  },
-  {
-    role: "bachelor of digital (ba) design",
-    details: `anhembi morumbi university (uam) | são Paulo, brazil | 2016 -> 2019`,
-  },
-  {
-    role: "career and technical education (cte) on information systems",
-    details: `são paulo state technical school (etec) | são Paulo, brazil | 2013 -> 2015`,
+    role: "bachelor in computer engineering",
+    details: `centro universitário de são paulo university (UNASP) | são Paulo, brazil | 2018 -> 2022`,
   },
 ];
 
@@ -78,25 +73,25 @@ const quickActionList = [
     nick: "c",
     icon: <FiCopy />,
     type: 1,
-    textToCopy: "https://cesarolvr.com",
+    textToCopy: rootDomain,
   },
   {
     text: "download cv",
     nick: "d",
     icon: <FiDownload />,
-    target: cesarolvrCV,
+    target: CV,
   },
   {
     text: "know my career",
     nick: "k",
-    icon: <FiAward />,
-    target: "https://www.linkedin.com/in/cesarolvr/",
+    icon: <FiLinkedin />,
+    target: "https://linkedin.com/in/lccmrx",
   },
   {
     text: "see my github",
     nick: "g",
     icon: <FiGithub />,
-    target: "https://github.com/cesarolvr/",
+    target: socials.github,
   },
   {
     text: "book a meeting",
@@ -108,26 +103,20 @@ const quickActionList = [
     text: "send an email",
     nick: "e",
     icon: <FiMail />,
-    target: "mailto:contact@cesarolvr.com",
+    target: socials.email,
   },
   {
     text: "follow me on instagram",
     nick: "g",
     icon: <FiInstagram />,
-    target: "https://www.instagram.com/cesarolvr/",
-  },
-  {
-    text: "see my current readings",
-    nick: "r",
-    icon: <FiBook />,
-    target: "https://goodreads.com/cesarolvr",
+    target: socials.instagram,
   },
   {
     text: "view source code",
     nick: "r",
     icon: <FiCoffee />,
-    target: "https://github.com/cesarolvr/cesarolvr-www",
+    target:  `${socials.github}/www`,
   },
 ];
 
-export { bioDescription, careerPath, academyPath, quickActionList };
+export { bioDescription, subBioDescription, careerPath, academyPath, quickActionList, socials, CV };

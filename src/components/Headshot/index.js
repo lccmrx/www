@@ -308,7 +308,8 @@ const Headshot = () => {
     camera.position.z = 10;
     scene.add(camera);
 
-    scene.background = new THREE.Color(0x222222);
+    scene.background = new THREE.Color(0x0b2f4b);
+    console.log("here", scene.background)
 
     // Controls
     const controls = new OrbitControls(camera, canvas);
