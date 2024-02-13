@@ -3,7 +3,7 @@ run-name: 📦 Build triggered
 on: push
 jobs:
   build:
-    name: lccmrx.com build
+    name: lccmrx.dev build
     runs-on: ubuntu-latest
     permissions:
       id-token: write
