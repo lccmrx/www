@@ -8,8 +8,7 @@ import { State } from "../Layout";
 
 const Shortcut = ({ text }) => {
   const { setModalIsOpened } = React.useContext(State);
-  navigator.platform = "Win32"
-  console.log(navigator?.platform);
+
   const isMac =
     typeof window !== "undefined"
       ? !!navigator?.platform?.indexOf("Mac") == 0
