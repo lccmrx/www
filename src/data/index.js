@@ -10,7 +10,7 @@ import { FiMail } from "@react-icons/all-files/fi/FiMail";
 import { FiCoffee } from "@react-icons/all-files/fi/FiCoffee";
 
 // Files
-import CV from "../files/cv-cesarolvr.pdf";
+import CV from "../files/cv-lucca.pdf";
 
 const bioDescription = `6+ years of experience as a Software Engineer, working on
 large-scale and high-impact projects for digital companies, where I
