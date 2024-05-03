@@ -31,8 +31,13 @@ const socials = {
 
 const careerPath = [
   {
+    role: "senior software engineer",
+    details: `Mercado Livre | São Paulo, Brazil | 2024 -> current`,
+    description: `Recently admitted`
+  },
+  {
     role: "software engineer",
-    details: `Red Ventures | São Paulo, Brazil | 2022 -> current`,
+    details: `Red Ventures | São Paulo, Brazil | 2022 -> 2024`,
     description: `As a Software Engineer @ RV, my core focus is on back-end engineering, complemented by providing assistance to the data teams as required. Our tech stack predominantly features Golang, complemented by a variety of bespoke architectures, including mail gunners, content management systems, and more. We specialize in constructing REST APIs tailored to our clients' specific needs, ranging from serverless to cloud-managed containerized architectures, leveraging technologies such as Kubernetes and AWS ECS. Our primary objective is to craft seamless acquisition pages that prioritize speed and security throughout the process. This commitment ensures we consistently meet high standards of quality, performance, and accessibility.`,
   },
   {
