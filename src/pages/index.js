@@ -29,7 +29,7 @@ const IndexPage = () => {
         <Header hideShortcut />
         <main>
           <Container>
-            <h1 className="banner-title">Lucca Marques</h1>
+            <h1 className="banner-title">Lucca Leme Marques</h1>
             <h2 className="banner-subtitle">
               software engineer @{" "}
               <a target="_blank" href="https://mercadolivre.com.br">
