@@ -55,6 +55,7 @@ const About = () => {
         <Header goBackToHome={true} />
         <main>
           <div className="headshot column">
+          
             {isMobile ? <img src={headshot} alt="headshot" /> : <Headshot />}
 
             <a
