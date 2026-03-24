@@ -12,7 +12,7 @@ import { FiCoffee } from "@react-icons/all-files/fi/FiCoffee";
 // Files
 import CV from "../files/cv-lucca.pdf";
 
-const bioDescription = `6+ years of experience as a Software Engineer, working on
+const bioDescription = `8+ years of experience as a Software Engineer, working on
 large-scale and high-impact projects for digital companies, where I
 created digital acquisition experiences, dashboards, designed systems and email marketing tools.`;
 const subBioDescription = `I'm really focused about resolving real problems through technology,
@@ -23,7 +23,7 @@ const rootDomain = "https://lccmrx.dev";
 
 const socials = {
   email: "mailto:contact@lccmrx.dev",
-  discord: "",
+  discord: "https://discordapp.com/users/591365876150829166",
   github: "https://github.com/lccmrx",
   linkedin: "https://linkedin.com/in/lccmrx",
   instagram: "https://instagram.com/lccmrx/",
@@ -31,14 +31,19 @@ const socials = {
 
 const careerPath = [
   {
+    role: "tech lead | software engineer",
+    details: `Nuvy AI | Miami, USA | 2025 -> current`,
+    description: `As a Tech Leader @ Nuvy, I face daily challenges on how to better fit my team to the necessary tasks, and develop the product. Since it's a Startup, there's lots of work to be done, and mainly my goal is to guard my team, and better distribute the load.`
+  },
+  {
     role: "senior software engineer",
-    details: `Mercado Livre | São Paulo, Brazil | 2024 -> current`,
-    description: `Recently admitted`
+    details: `Mercado Livre | São Paulo, Brazil | 2024 -> 2025`,
+    description: `As a SWE @ Meli, my primary function was to guide the application to an improved state. I've inherited a legacy Go API that was responsible for handling a great share of Meli Mercado Pago's requests, acting as a gateway. I've led a portion of that API for integrating with other Meli systems to enhance user experience. Had On-Call shifts, monitored the application with telemetry monitoring systems, such as DataDog and New Relic.`
   },
   {
     role: "software engineer",
     details: `Red Ventures | São Paulo, Brazil | 2022 -> 2024`,
-    description: `As a Software Engineer @ RV, my core focus is on back-end engineering, complemented by providing assistance to the data teams as required. Our tech stack predominantly features Golang, complemented by a variety of bespoke architectures, including mail gunners, content management systems, and more. We specialize in constructing REST APIs tailored to our clients' specific needs, ranging from serverless to cloud-managed containerized architectures, leveraging technologies such as Kubernetes and AWS ECS. Our primary objective is to craft seamless acquisition pages that prioritize speed and security throughout the process. This commitment ensures we consistently meet high standards of quality, performance, and accessibility.`,
+    description: `As a Software Engineer @ RV, my core focus was on back-end engineering, complemented by providing assistance to the data teams as required. Our tech stack predominantly featured Golang, complemented by a variety of bespoke architectures, including mail gunners, content management systems, and more. We specialized in constructing REST APIs tailored to our clients' specific needs, ranging from serverless to cloud-managed containerized architectures, leveraging technologies such as Kubernetes and AWS ECS. Our primary objective was to craft seamless acquisition pages that prioritize speed and security throughout the process. This commitment ensured we consistently met high standards of quality, performance, and accessibility.`,
   },
   {
     role: "software engineer assistant",
