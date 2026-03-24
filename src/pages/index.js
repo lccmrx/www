@@ -31,9 +31,9 @@ const IndexPage = () => {
           <Container>
             <h1 className="banner-title">Lucca Leme Marques</h1>
             <h2 className="banner-subtitle">
-              software engineer @{" "}
-              <a target="_blank" href="https://mercadolivre.com.br">
-                Mercado Livre Brazil
+              tech lead @{" "}
+              <a target="_blank" href="https://nuvy.ai">
+                Nuvy
               </a>
             </h2>
             <p className="banner-description">

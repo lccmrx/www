@@ -32,8 +32,8 @@ const socials = {
 const careerPath = [
   {
     role: "tech lead | software engineer",
-    details: `Nuvy AI | Miami, USA | 2025 -> current`,
-    description: `As a Tech Leader @ Nuvy, I face daily challenges on how to better fit my team to the necessary tasks, and develop the product. Since it's a Startup, there's lots of work to be done, and mainly my goal is to guard my team, and better distribute the load.`
+    details: `Nuvy | Miami, USA | 2025 -> current`,
+    description: `As a Tech Leader @ Nuvy, I face daily challenges on how to better fit my team to the necessary tasks, and develop the product. Since it's a Startup, there's lots of work to be done, and mainly my goal is to guard my team, and better distribute the load. Working on payment systems is always a great challenge`
   },
   {
     role: "senior software engineer",
